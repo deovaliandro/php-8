@@ -1,7 +1,14 @@
 <?php
 
-function sayBellow(string $name, string $oi): void {
-    echo "yoooo whattssupp $name, $oi" . PHP_EOL;
+function sayMyName(string $firstName, string $middleName = "", string $lastName):
+void {
+    echo "yoooo whattssupp $firstName $lastName, can i call u $middleName" . PHP_EOL;
 }
 
-sayBellow(name: "Deo", oi: "mate");
+// not error
+sayMyName("Deo", "Deo", "Valiandro");
+sayMyName(firstName: "Deo", middleName: "Deo", lastName: "Valiandro");
+sayMyName(firstName: "Deo", lastName: "Valiandro");
+
+// error
+// sayMyName("Deo", "Valiandro");
