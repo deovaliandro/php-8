@@ -18,3 +18,4 @@ function testMixed(mixed $data): mixed
 var_dump(testMixed(false));
 var_dump(testMixed(12));
 var_dump(testMixed("kata"));
+var_dump(testMixed([12]));
