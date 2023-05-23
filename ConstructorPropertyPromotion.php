@@ -11,5 +11,5 @@ class Person
     }
 }
 
-$deo = new Person("Deo", "Mamuju", "Mr and Mrs", 25);
+$deo = new Person("Deo", "Chicago", "Mr and Mrs", 25);
 var_dump($deo);
