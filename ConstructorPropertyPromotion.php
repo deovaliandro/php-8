@@ -6,10 +6,11 @@ class Person
         public string $name,
         public string $address,
         public string $parents,
-        public int $age = 0
-    ) {
+        public int    $age = 0
+    )
+    {
     }
 }
 
-$deo = new Person("Deo", "Chicago", "Mr and Mrs", 25);
+$deo = new Person("John", "Chicago", "Mr and Mrs", 25);
 var_dump($deo);

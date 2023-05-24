@@ -1,14 +1,15 @@
 <?php
 
 function sayMyName(string $firstName, string $middleName = "", string $lastName):
-void {
+void
+{
     echo "yoooo whattssupp $firstName $lastName, can i call u $middleName" . PHP_EOL;
 }
 
 // not error
-sayMyName("Deo", "Deo", "Valiandro");
-sayMyName(firstName: "Deo", middleName: "Deo", lastName: "Valiandro");
-sayMyName(firstName: "Deo", lastName: "Valiandro");
+sayMyName("John", "Doe", "Mr");
+sayMyName(firstName: "John", middleName: "Doe", lastName: "Mr");
+sayMyName(firstName: "John", lastName: "Mr");
 
 // error
-// sayMyName("Deo", "Valiandro");
+// sayMyName("John", "Doe");
